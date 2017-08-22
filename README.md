@@ -6,6 +6,7 @@
 * Шаблон расписания: https://yadi.sk/d/KRD-MTMV3LunxW
 * Имя файла в директории должно быть таким: `rasp.xlsx`
 * Столбцы/поля должны быть по шаблону, в качестве даты указывается точная дата занятия
+
 Пример работы с расписанием
 ```
 if (time() >= strtotime('-8 hours -1 minutes', $date) && time() <= strtotime('-7 hours -59 minutes', $date)) {
