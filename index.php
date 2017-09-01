@@ -123,8 +123,9 @@ class LessonManager
 		return file_put_contents(__DIR__ . '/log.txt', $data);
 	}
 
-	public function whatWasSent($userID, $message, $date) {
+	public function whatWasSent($pass, $userID, $message, $date) {
 		$data = '--- ' . date('r') . ' ---'  . PHP_EOL 
+		. 'Пароль группы: ' . $pass . '.' . PHP_EOL
 		. 'Установленные дата и время: ' . $date . '.' . PHP_EOL
 		. 'Пользователю ' . $userID . ' было отправлено сообщение: ' . PHP_EOL
 		. $message . PHP_EOL

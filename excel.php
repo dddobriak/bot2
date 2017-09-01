@@ -35,7 +35,7 @@ if (isset($timing)) {
       foreach ($IDandPass as $user) {
         if ($time['reminder']['pass'] === array_values($user)[0]) {
           $lessonManager->sendMessage($time['reminder']['text'], array_keys($user)[0]);
-          $lessonManager->whatWasSent(array_keys($user)[0], $time['reminder']['text'], $time['reminder']['date']);
+          $lessonManager->whatWasSent($time['reminder']['pass'], array_keys($user)[0], $time['reminder']['text'], $time['reminder']['date']);
         }
       }
     }
@@ -44,7 +44,7 @@ if (isset($timing)) {
       foreach ($IDandPass as $user) {
         if ($time['event']['pass'] === array_values($user)[0]) {
           $lessonManager->sendMessage($time['event']['text'], array_keys($user)[0]);
-          $lessonManager->whatWasSent(array_keys($user)[0], $time['event']['text'], $time['event']['date']);
+          $lessonManager->whatWasSent($time['event']['pass'], array_keys($user)[0], $time['event']['text'], $time['event']['date']);
         }
       }
     }
