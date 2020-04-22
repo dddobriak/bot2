@@ -6,7 +6,7 @@
 class LessonManager
 {
 	private $apiURL = 'https://api.telegram.org/bot';
-	private $token = '303163641:AAESIyEByW9UzatswuE7Ay679ZYksHNYbLc';
+	private $token = '';
 	const PASSLIST = 'passlist.json';
 	const COMMAND_DUMP = 'command-dump/';
 
